@@ -6,4 +6,5 @@ RUN npm install --silent \
         && npm install typescript -g --silent
 ADD . /app/
 RUN npm run build
+COPY .env ./build
 CMD [ "npm", "start" ]

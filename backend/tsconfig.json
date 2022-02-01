@@ -1,7 +1,7 @@
 {
     "compilerOptions": {
       "target": "es2019",
-      "types": ["node"],
+      "types": ["node", "jest"],
       "module": "commonjs",
       "declaration": false,
       "strict": true,
@@ -23,5 +23,5 @@
       "src/**/*.ts",
       "typings/*"
     ],
-    "exclude": ["node_modules", "build/**"]
+    "exclude": ["node_modules", "build/**", "**/*.test.ts"]
   }
